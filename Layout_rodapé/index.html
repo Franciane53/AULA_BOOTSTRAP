@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Rodapé com Colunas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    footer {
+      background-color: #f8f9fa;
+      padding: 2rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-column h5 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Conteúdo do site aqui -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h5>Sobre Nós</h5>
+        <p>Somos uma empresa dedicada a fornecer soluções digitais modernas e acessíveis para todos os tipos de negócios.</p>
+      </div>
+      <div class="footer-column">
+        <h5>Links Úteis</h5>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h5>Contato</h5>
+        <ul>
+          <li>Email: contato@exemplo.com</li>
+          <li>Telefone: (11) 99999-9999</li>
+          <li>Endereço: Rua Exemplo, 123 - SP</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
