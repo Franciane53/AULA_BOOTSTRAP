@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard com Grid e Flexbox</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ícones Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding: 2rem;
+    }
+
+    .widget {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .widget-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .widget-header i {
+      margin-right: 8px;
+      color: #0d6efd;
+    }
+
+    .widget-content {
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="dashboard">
+
+      <div class="widget">
+        <div class="widget-header">
+          <i class="bi bi-graph-up"></i>
+          Relatório de Vendas
+        </div>
+        <div class="widget-content">
+          R$ 12.300 este mês<br/>
+          +15% em relação ao mês passado.
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">
+          <i class="bi bi-person"></i>
+          Novos Usuários
+        </div>
+        <div class="widget-content">
+          256 novos cadastros esta semana.
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">
+          <i class="bi bi-bell"></i>
+          Notificações
+        </div>
+        <div class="widget-content">
+          8 novas mensagens e 2 alertas críticos.
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">
+          <i class="bi bi-calendar-event"></i>
+          Próximos Eventos
+        </div>
+        <div class="widget-content">
+          Reunião de equipe na sexta às 14h.<br/>
+          Treinamento na segunda-feira.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
